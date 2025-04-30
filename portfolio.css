@@ -1,0 +1,133 @@
+/* Multiline comments
+Selectors in CSS
+1. Directly using the HTML tag - Use the HTML tag itself.
+2. CLASS Name - Use the classname to identify the html elements and you will have to use a . as a prefix for the classname.
+3.ID Name - Use the id name to identify the html elements and you will have to use a # as a prefix for the id name.
+
+h2 {
+color : red
+}
+
+.edu-item{
+  color : blue
+}
+*/
+/* CSS BOX MODEL */
+
+body {
+    font-family: SegeoUI, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #2ea9ea;
+    color: #333
+    
+  }
+  
+  header {
+    background-color: #1279f1;
+    text-align: center;
+    padding: 50px 0 0 0; /* values are considered in clockwise direction*/
+    border: 10px;
+    border-style: solid;
+    border-color: #28c2f7;
+    border-radius: 8px;
+    margin: auto;
+  }
+  
+  nav {
+    background-color : #2c3e50;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  nav ul li a:hover{
+    color: #28d1f7;
+    border: 2px;
+    border-style: solid;
+    border-color: #28f7e7;
+    border-radius: 8px;
+    padding: 2px;
+  
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 3rem 2rem; /* rem means relative size wrt to parent size*/
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    /* R-red G-green B-Blue A-Alpha(Opacity) */
+    border-radius: 8px;
+  }
+  
+  .section h2{
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #admin-login{
+    display: none;
+  }
+  
+  #admin-section{
+    display: none;
+  }
+  
+  
+  #contact-form input, #contact-form textarea{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact-form button{
+    background-color: #3498db;
+    color: #333;
+    border-radius: 4px;
+    width: 200px;
+  }
+  .contactbtn{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #toggle-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+  }
+  
+  #toggle-theme:hover{
+    background-color: #3498db;
+  }
+  
+  .dark-mode{
+    background-color: #34495c;
+    color: #3e3b40;
+  }
+  
+  .dark-mode header{
+    background-color: #34455e;
+  }
+  
+  .dark-mode nav{
+    background-color: #555;
+  }
+  
